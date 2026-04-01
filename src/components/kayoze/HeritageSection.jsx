@@ -61,7 +61,7 @@ export default function HeritageSection() {
   return (
     <section className="py-24 md:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Image Side */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -74,14 +74,14 @@ export default function HeritageSection() {
               <img
                 src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=700&h=900&fit=crop"
                 alt="Bespoke Tailoring"
-                className="w-full shadow-2xl"
+                className="w-full max-h-[60vw] lg:max-h-none object-cover shadow-2xl"
               />
               {/* Decorative Frame */}
               <div className="absolute -top-6 -left-6 w-full h-full border-2 border-[#c9a962]/40 -z-10" />
 
               {/* Floating Badge */}
-              <div className="absolute -bottom-8 -right-8 bg-[#1a1a1a] p-6 shadow-xl">
-                <p className="text-[#c9a962] text-4xl font-light">5+</p>
+              <div className="absolute bottom-4 right-4 lg:-bottom-8 lg:-right-8 bg-[#1a1a1a] p-4 lg:p-6 shadow-xl">
+                <p className="text-[#c9a962] text-3xl lg:text-4xl font-light">5+</p>
                 <p className="text-white text-sm tracking-wider uppercase">
                   Years of Excellence
                 </p>

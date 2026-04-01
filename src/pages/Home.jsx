@@ -96,7 +96,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-light tracking-[0.1em] mb-8 relative h-32 md:h-48 lg:h-32 flex items-center justify-center"
+            className="text-4xl md:text-7xl lg:text-8xl font-light tracking-[0.1em] mb-8 relative h-24 md:h-48 lg:h-32 flex items-center justify-center"
           >
             {/* Yellow static text */}
             <span className="text-yellow-500 absolute">KAYOZE</span>
@@ -111,7 +111,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-white/70 font-light max-w-2xl mx-auto leading-relaxed mb-12"
+            className="text-base md:text-2xl text-white/70 font-light max-w-2xl mx-auto leading-relaxed mb-10 md:mb-12"
           >
             Where tradition meets modern elegance. Crafting bespoke garments
             that tell your story, delivered worldwide.
@@ -237,7 +237,7 @@ export default function Home() {
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
               {craftsmanshipFeatures.map((feature, index) => (
                 <motion.div
                   key={feature.title}
@@ -279,7 +279,7 @@ export default function Home() {
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             {[
               {
                 step: "01",

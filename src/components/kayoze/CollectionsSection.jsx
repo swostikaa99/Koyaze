@@ -94,18 +94,18 @@ export default function CollectionsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true }}
-          className="mt-12 flex flex-wrap items-center justify-end gap-6"
+          className="mt-6 grid grid-flow-col auto-cols-max justify-end gap-1.5 overflow-x-auto md:mt-12 md:flex md:flex-nowrap md:items-center md:justify-end md:gap-6"
         >
           <Link
             to={createPageUrl("Products")}
-            className="inline-block px-10 py-4 bg-[#c9a962] text-black text-sm tracking-[0.2em] uppercase"
+            className="inline-block shrink-0 px-2 py-1.5 sm:px-10 sm:py-4 bg-[#c9a962] text-black text-[7px] sm:text-sm tracking-[0.03em] sm:tracking-[0.2em] uppercase whitespace-nowrap"
           >
             View All Collections
           </Link>
 
           <Link
             to="/bookconcultation"
-            className="inline-block px-10 py-4 border-2 border-[#c9a962] text-[#c9a962] text-sm tracking-[0.2em] uppercase
+            className="inline-block shrink-0 px-2 py-1.5 sm:px-10 sm:py-4 border-2 border-[#c9a962] text-[#c9a962] text-[7px] sm:text-sm tracking-[0.03em] sm:tracking-[0.2em] uppercase whitespace-nowrap
                        hover:bg-[#c9a962] hover:text-white transition-all duration-300"
           >
             Schedule Your Fitting →
